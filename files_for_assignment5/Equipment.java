@@ -1,3 +1,4 @@
+/* Assignment 5 */
 package entity;
 import javax.persistence.*;
 import java.io.Serializable;
