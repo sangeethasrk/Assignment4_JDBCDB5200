@@ -189,6 +189,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\aboutpage.jpg" />
+    <Content Include="Images\bloodbag2.jpg" />
+    <Content Include="Images\bloodbagedit.jpg" />
     <Content Include="Images\blooddrop.JPG" />
     <Content Include="Images\blooddrop22.JPG" />
     <Content Include="Images\bloodgroups.JPG" />

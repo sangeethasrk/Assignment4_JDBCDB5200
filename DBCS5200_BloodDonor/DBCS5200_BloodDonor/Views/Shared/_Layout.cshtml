@@ -10,6 +10,24 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
+        <div id="fb-root"></div>
+        <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div id="fb-root"></div>
+        <script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,7 +55,23 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>CS5200 Introduction to Database Management Systems - Blood Donor Hub - Sangeetha Sivaramakrishnan & Niharika Sharma</p>
+            <table>
+                <tr>
+                    <td>
+                        <p>CS5200 Introduction to Database Management Systems - Blood Donor Hub - Sangeetha Sivaramakrishnan & Niharika Sharma</p>
+                    </td>
+                    <td>
+                        <div class="fb-share-button" data-href="http://localhost:24570/" data-layout="button_count"></div>
+                    </td>
+                    <td>
+                        <div class="fb-like" data-href="https://www.facebook.com/blooddonorhub?skip_nax_wizard=true&amp;ref_type" data-width="10" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+                    </td>
+                    <td>
+                        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                    </td>
+                </tr> 
+            </table>
         </footer>
     </div>
 
