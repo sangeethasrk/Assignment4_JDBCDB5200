@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DBCS5200_BloodDonor.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -15,6 +17,7 @@ namespace DBCS5200_BloodDonor
     {
         protected void Application_Start()
         {
+            Database.SetInitializer<BloodDonorContext>(new BloodDonorDbInitializer());
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
