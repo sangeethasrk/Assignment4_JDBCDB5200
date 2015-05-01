@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodDonorHub", "BloodDonorHub\BloodDonorHub.csproj", "{27747BAA-1883-45B3-BD2B-23E5CDD2CB47}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9EAFEEF4-8D52-438E-A074-C700A9ACB1FC} = {9EAFEEF4-8D52-438E-A074-C700A9ACB1FC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{37A95F01-9568-4D0C-903E-1D5971F5355C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F6EB9878-133F-4E7D-80EE-DE972F119ACE} = {F6EB9878-133F-4E7D-80EE-DE972F119ACE}
+		{9EAFEEF4-8D52-438E-A074-C700A9ACB1FC} = {9EAFEEF4-8D52-438E-A074-C700A9ACB1FC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessModels", "DataAccessModels\DataAccessModels.csproj", "{9EAFEEF4-8D52-438E-A074-C700A9ACB1FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAcessLayer", "DataAccessLayer\DataAcessLayer.csproj", "{F6EB9878-133F-4E7D-80EE-DE972F119ACE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9EAFEEF4-8D52-438E-A074-C700A9ACB1FC} = {9EAFEEF4-8D52-438E-A074-C700A9ACB1FC}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B857367A-1A3F-435D-AEB8-EC893BD8A566}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27747BAA-1883-45B3-BD2B-23E5CDD2CB47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27747BAA-1883-45B3-BD2B-23E5CDD2CB47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27747BAA-1883-45B3-BD2B-23E5CDD2CB47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27747BAA-1883-45B3-BD2B-23E5CDD2CB47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A95F01-9568-4D0C-903E-1D5971F5355C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A95F01-9568-4D0C-903E-1D5971F5355C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A95F01-9568-4D0C-903E-1D5971F5355C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A95F01-9568-4D0C-903E-1D5971F5355C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAFEEF4-8D52-438E-A074-C700A9ACB1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAFEEF4-8D52-438E-A074-C700A9ACB1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAFEEF4-8D52-438E-A074-C700A9ACB1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAFEEF4-8D52-438E-A074-C700A9ACB1FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6EB9878-133F-4E7D-80EE-DE972F119ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6EB9878-133F-4E7D-80EE-DE972F119ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6EB9878-133F-4E7D-80EE-DE972F119ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6EB9878-133F-4E7D-80EE-DE972F119ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

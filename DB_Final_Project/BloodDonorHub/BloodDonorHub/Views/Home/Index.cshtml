@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+@model BloodDonorHub.Models.LoginUserModel
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+
+    <link rel="stylesheet" type="text/css" href="~/Contents/Layout.css" />
+
+
+
+    <body>
+
+        <form id="form1" runat="server">
+
+            <div id="Boundary">
+
+                <div id="ImageSlider">
+                    <div id="NavigationTab">
+                        <table>
+                            <tr>
+                                <td><h3><a href="/">Home</a></h3></td>
+                                <td><h3><a href="/">About </a></h3></td>
+                                <td><h3><a href="/Register/Registration">Register</a></h3></td>
+                                <td><h3><a href="/Login/Login">Login</a></h3></td>
+                            </tr>
+                        </table>                        
+                    </div>
+                </div>
+
+
+                <div id="Content_Area" style="height: 400px; width: 50%; float: left; margin-left: 5%;">
+                    <h2>
+                        Donate Blood......<br />
+                        ...... Save Life !!!
+                    </h2>
+                    <p>
+                        The Blood Donors’ Hub is a Blood Donor Club. This application allows an enrolled employee of a company to register, login, request for blood.
+                    </p>
+
+                    <h2>
+                        Are you willing to donate ??
+                        <br />
+                    </h2>
+                    <p>Just login and post the request. Donors will contact you immediately.</p>
+
+                </div>
+
+                <div style="float: left; height: 300px; border-right: 1px solid green; margin-top: 20px; margin-left: 20px; margin-right: 20px;">
+                </div>
+
+
+                <div style="float: left; height: 400px; width: 30%; margin-right: 3%">
+
+                    <h2>Login</h2>
+
+                    <div id="Login">
+
+                        <label class="label">Email ID:</label>
+                        @Html.TextBoxFor(m => m.Email)<br>
+                        <br>
+
+                        <label class="label">Password:</label>
+                        @Html.PasswordFor(m => m.Password)<br />
+                        <br>
+
+                        <input type="submit" value="Login" class="submit" />
+                        @if (ViewData["Error"] != null)
+                        {
+                            <div class="Error" style="background-color: red">
+                                <p><strong>Error:</strong> @ViewData["Error"].ToString()</p>
+                            </div>
+                        }
+
+                    </div>
+
+                </div>
+
+
+                <div id="footer" style="clear: both;">
+                    <p></p>
+                </div>
+
+            </div>
+        </form>
+    </body>
+}
